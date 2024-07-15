@@ -1,0 +1,11 @@
+import sys
+
+def uniqueCharactersCount(input_string):
+    return len(set(input_string))
+
+if __name__ == "__main__":
+    queries = int(input().strip())
+    for _ in range(queries):
+        input_str = input().strip()
+        result = uniqueCharactersCount(input_str)
+        print(result)
